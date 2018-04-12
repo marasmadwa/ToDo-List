@@ -11,7 +11,7 @@ const showErrors = function (err) {
 };
 
 gulp.task('sass', function () {
-    return gulp.src('./src/scss/_main.scss')
+    return gulp.src('./src/scss/main.scss')
         .pipe(plumber({
             errorHandler: showErrors
         }))
