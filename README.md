@@ -11,6 +11,6 @@ and run App by typing:
 
 `npm start`
 
-The app is ready to go ! :)
+The app is ready to go ! 
 
 ## The project is under development.
