@@ -1,41 +1,45 @@
 import React from 'react';
 
-class Task extends React.Component{
-    constructor(props){
+
+export default class ToDoList extends React.Component {
+    constructor(props) {
         super(props);
-        this.state={
-            text: ''
+        this.state = {
+            task: '',
+            value: ''
         }
     }
 
-    render(){
-        return(
+    handleOnChange = (event) => {
+        this.setState({
+            [event.target.id]: event.target.value
+        })
+    };
+
+    addTask = () => {
+        this.setState({
+            value: this.state.task
+        })
+    };
+
+    render() {
+        // const tasks = this.state.value.map(task => {
+        //     return <li key={task.id}>{this.state.value}</li>
+        // });
+        // console.log(this.state.value);
+        // // let task = [];
+        // // for (let i = 0; i < this.state.value.length; i++) {
+        // //     task = task + this.state.value[i]
+        // // }
+        return (
             <div>
-                <li>{this.state.text}</li>
-                <button className='removeTask'>Remove task</button>
-                <button className='editTask'>Edit</button>
-                <input type="checkbox"/>
+                <input id='task' type="text" value={this.state.task} onChange={this.handleOnChange}/>
+                <button onClick={this.addTask}>add</button>
+                <ul>
+                    <li></li>
+                </ul>
             </div>
         )
     }
 }
 
-export default class ToDoList extends React.Component {
-    render() {
-        return (
-            <div className='container'>
-                <div className='task'>
-                    <p>To Do:</p>
-                    <div className='profilePicture'></div>
-                </div>
-                <div className="addTask">
-                    <button className='addTaskBtn'>Add task!</button>
-                    <input type="text" placeholder={'What to do?'}/>
-                    <ul>
-                        <Task/>
-                    </ul>
-                </div>
-            </div>
-        )
-    }
-}

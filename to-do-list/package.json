@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "infinite-scroll": "^3.0.3",
+    "npm": "^5.8.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-infinite-scroll-component": "^4.0.0",

@@ -1,52 +1,52 @@
-//Layout configuration
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-  height: 100vh;
-  background: rgb(253,153,135); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(253,153,135,1) 1%, rgba(225,38,5,1) 51%, rgba(253,153,135,1) 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(253,153,135,1) 1%,rgba(225,38,5,1) 51%,rgba(253,153,135,1) 99%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(253,153,135,1) 1%,rgba(225,38,5,1) 51%,rgba(253,153,135,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd9987', endColorstr='#fd9987',GradientType=0 ); /* IE6-9 */
-}
-.container{
-  width: 1350px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-//ToDo list
-
-.task{
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row-reverse;
-  border: 1px solid black;
-  position: relative;
-  background: white;
-  .profilePicture{
-    width: 120px;
-    height: 120px;
-    border: 1px solid black;
-    border-radius: 50%;
-    position: absolute;
-    left: 10%;
-    bottom: -90%;
-    background-image: url("../images/avatar.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  p{
-    margin-bottom: 0;
-  }
-  }
-}
+////Layout configuration
+//* {
+//  padding: 0;
+//  margin: 0;
+//  box-sizing: border-box;
+//}
+//
+//body{
+//  height: 100vh;
+//  background: rgb(253,153,135); /* Old browsers */
+//  background: -moz-linear-gradient(top, rgba(253,153,135,1) 1%, rgba(225,38,5,1) 51%, rgba(253,153,135,1) 99%); /* FF3.6-15 */
+//  background: -webkit-linear-gradient(top, rgba(253,153,135,1) 1%,rgba(225,38,5,1) 51%,rgba(253,153,135,1) 99%); /* Chrome10-25,Safari5.1-6 */
+//  background: linear-gradient(to bottom, rgba(253,153,135,1) 1%,rgba(225,38,5,1) 51%,rgba(253,153,135,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd9987', endColorstr='#fd9987',GradientType=0 ); /* IE6-9 */
+//}
+//.container{
+//  width: 1350px;
+//  height: 100vh;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  flex-direction: column;
+//}
+//
+////ToDo list
+//
+//.task{
+//  width: 50%;
+//  display: flex;
+//  justify-content: space-around;
+//  align-items: center;
+//  flex-direction: row-reverse;
+//  border: 1px solid black;
+//  position: relative;
+//  background: white;
+//  .profilePicture{
+//    width: 120px;
+//    height: 120px;
+//    border: 1px solid black;
+//    border-radius: 50%;
+//    position: absolute;
+//    left: 10%;
+//    bottom: -90%;
+//    background-image: url("../images/avatar.png");
+//    background-repeat: no-repeat;
+//    background-position: center;
+//    background-size: cover;
+//  p{
+//    margin-bottom: 0;
+//  }
+//  }
+//}
